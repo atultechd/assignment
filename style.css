@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 57.5%;
+    max-width: 1400px;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.max_width{
+    padding: 1rem 8rem;
+    margin: auto;
+}
+
+
+/*.......................navbar styling.................... */
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0rem 0.6rem 1.2rem -0.2rem, 
+    rgba(0, 0, 0, 0.3) 0rem 0.3rem 0.7rem -0.3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar .max_width{
+    display: flex;
+    align-items: center;
+    padding-left: 5.5rem;
+    padding-right: 1rem;
+}
+
+.logo{
+    padding-top: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin-right: 25rem;
+    /*margin-left: 1;*/
+
+}
+.logo img{
+    width: 8rem;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 4rem;
+    transition: color 0.3s ease;
+}
+.navbar .menu li img{
+    width: 4rem;
+}
+div#video{
+    display: flex;
+    flex-direction: column;
+}
+div#membership{
+    display: flex;
+    flex-direction: column;
+}
+div#plan{
+    display: flex;
+    flex-direction: column;
+}
+div#explore{
+    display: flex;
+    flex-direction: column;
+}
+.navbar .menu li a:hover{
+    cursor: pointer;
+    background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
+        rgba(247, 63, 0, 0.78) 118.81%);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+div .login{
+    margin: 0 0 0 25rem;
+    font-size: 1.8rem;
+}
+
+div .login{
+    display: flex;
+}
+div .login img{
+    width: 2.5rem;
+}
+.login .text-login{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu  styling */
+.menu-btn{
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+    padding: 3.0rem;
+    text-align: center;
+}
+
+
+/*.............. home section styling.....................*/
+
+
+.home{
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max_width_section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto auto 10rem auto;  
+    
+}
+.max_width_section h2{
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.accordion {
+  width: 80vw;
+  max-width: 108rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 33.33%;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 500ms ease;
+}
+.accordion ul li:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?");
+}
+.accordion ul li:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?");
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1585473233369-14a97aa923df?");
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div a {
+  display: block;
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 1.5rem 2.0rem;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateX(-2rem);
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  top: 16rem;
+}
+.accordion ul li div a p {
+  top: 16rem;
+  font-size: 1.3rem;
+}
+.accordion ul:hover li {
+  width: 10%;
+}
+.accordion ul:hover li:hover {
+  width: 80%;
+}
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+}
+
+.accordion {
+    height: auto;
+}
+.accordion ul li,
+.accordion ul li:hover,
+.accordion ul:hover li,
+.accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    transition: none;
+}
+
+
+footer #foot{
+    display: flex;
+    width: 130rem;
+    height: 20rem;
+    background-color: #000000;
+}
+
+#foot img{
+    width: 4rem;
+    margin-left: 20rem;
+}
+
+footer img{
+    flex-direction: row;
+    margin: auto;
+}
+
+footer #foot p{
+    font-size: 4rem;
+}
