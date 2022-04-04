@@ -59,11 +59,23 @@
     </div>
   </div>  
   <footer id="foot">
-    <p>this is footer</p>
-    <img class="emonji" src="1.png" alt="">
-    <img class="emonji" src="thumbsup.png" alt="">
-    <img class="emonji" src="waving.png" alt="">
+    <span class="wave"><img id="one_emoji" class="emonji one" src="1.png" alt=""></span>
+    <span class="wave"><img id="thumbsUp" class="emonji thumb" src="thumbsup.png" alt=""></span>
+    <span class="wave"><img id="waving" class="emonji hand" src="waving.png" alt=""></span>
   </footer>
 
+  <script>
+    setTimeout(function(){
+      document.getElementById('one_emoji').className = 'one';
+    }, 5000);
+
+    setTimeout(function(){
+      document.getElementById('thumbsUp').className = 'thumb';
+    }, 7000);
+
+    setTimeout(function(){
+      document.getElementById('waving').className = 'hand';
+    }, 10000);
+  </script>
 </body>
 </html>

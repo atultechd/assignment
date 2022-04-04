@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html{
-    scroll-behavior: smooth;
-    font-size: 57.5%;
-    max-width: 1400px;
-    height: 100%;
+  scroll-behavior: smooth;
+  font-size: 57.5%;
+  max-width: 140.0rem;
+  height: 100%;
 }
 body{
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+  width: 1rem;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 .max_width{
-    padding: 1rem 8rem;
-    margin: auto;
+  padding: 1rem 8rem;
+  margin: auto;
 }
 
 
@@ -41,101 +41,101 @@ body{
 
 
 .navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    box-shadow: rgba(50, 50, 93, 0.25) 0rem 0.6rem 1.2rem -0.2rem, 
-    rgba(0, 0, 0, 0.3) 0rem 0.3rem 0.7rem -0.3rem;
-    padding-top: 0;
-    padding-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0rem 0.6rem 1.2rem -0.2rem, 
+  rgba(0, 0, 0, 0.3) 0rem 0.3rem 0.7rem -0.3rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar .max_width{
-    display: flex;
-    align-items: center;
-    padding-left: 5.5rem;
-    padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5.5rem;
+  padding-right: 1rem;
 }
 
 .logo{
-    padding-top: 0.5rem;
-    border: none;
-    border-radius: 1rem;
-    margin-right: 25rem;
-    /*margin-left: 1;*/
+  padding-top: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  margin-right: 25rem;
+  /*margin-left: 1;*/
 
 }
 .logo img{
-    width: 8rem;
+  width: 8rem;
 }
 .navbar .menu li{
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 .navbar .menu li a{
-    display: block;
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-left: 4rem;
-    transition: color 0.3s ease;
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  transition: color 0.3s ease;
 }
 .navbar .menu li img{
-    width: 4rem;
+  width: 4rem;
 }
 div#video{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 div#membership{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 div#plan{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 div#explore{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .navbar .menu li a:hover{
-    cursor: pointer;
-    background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
-        rgba(247, 63, 0, 0.78) 118.81%);
-    border-radius: 0rem 0rem 1rem 1rem;
+  cursor: pointer;
+  background: linear-gradient(266.29deg, #FF9C07 -0.46%, 
+    rgba(247, 63, 0, 0.78) 118.81%);
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
 div .login{
-    margin: 0 0 0 25rem;
-    font-size: 1.8rem;
+  margin: 0 0 0 25rem;
+  font-size: 1.8rem;
 }
 
 div .login{
-    display: flex;
+  display: flex;
 }
 div .login img{
-    width: 2.5rem;
+  width: 2.5rem;
 }
 .login .text-login{
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+  color: #fff;
 }
 
 /* menu  styling */
 .menu-btn{
-    font-size: 2.3rem;
-    cursor: pointer;
-    display: none;
-    padding: 3.0rem;
-    text-align: center;
+  font-size: 2.3rem;
+  cursor: pointer;
+  display: none;
+  padding: 3.0rem;
+  text-align: center;
 }
 
 
@@ -143,22 +143,22 @@ div .login img{
 
 
 .home{
-    padding-top: 20rem;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .home .max_width_section{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin: auto auto 10rem auto;  
-    
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: auto auto 10rem auto;  
+
 }
 .max_width_section h2{
-    font-size: 4.2rem;
-    font-weight: 400;
+  font-size: 4.2rem;
+  font-weight: 400;
 }
 
 .accordion {
@@ -252,43 +252,79 @@ div .login img{
   transform: translateX(0);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60.0rem) {
   body {
     margin: 0;
-}
+  }
 
-.accordion {
+  .accordion {
     height: auto;
-}
-.accordion ul li,
-.accordion ul li:hover,
-.accordion ul:hover li,
-.accordion ul:hover li:hover {
+  }
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
     position: relative;
     display: table;
     table-layout: fixed;
     width: 100%;
     transition: none;
+  }
 }
 
 
-footer #foot{
-    display: flex;
-    width: 130rem;
-    height: 20rem;
-    background-color: #000000;
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 #foot img{
-    width: 4rem;
-    margin-left: 20rem;
+  width: 4rem;
+  margin-left: 20rem;
+  flex-direction: row;
+  margin: auto;
 }
 
-footer img{
-    flex-direction: row;
-    margin: auto;
+footer .wave {
+  animation-name: wave-animation;
+  animation-duration: 3s;        
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;       
+  display: inline-block;
 }
 
-footer #foot p{
-    font-size: 4rem;
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.wave .emonji{
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.one{ 
+  opacity:0;
+}
+
+.thumb{ 
+  opacity:0;
+}
+
+.hand{ 
+  opacity:0;
 }
